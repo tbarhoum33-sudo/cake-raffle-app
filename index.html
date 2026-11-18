@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cake Raffle</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="actions.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <div class="cake">🎂</div>
+    <h1>Sweet Cake Raffle</h1>
+    <p>Enter participants and win a delicious cake!</p>
+
+    <form id="participantForm">
+      <input
+        id="participantName"
+        type="text"
+        placeholder="Participant name"
+        aria-label="Participant name"
+        required
+      >
+      <button type="submit">Add Participant</button>
+    </form>
+
+    <h2>Participants</h2>
+    <ul id="participantsList"></ul>
+    <p id="total">Total: 0</p>
+
+    <button id="raffleBtn" type="button">
+      🎉 Pick a Winner
+    </button>
+
+    <button id="resetBtn" type="button">
+      Reset Raffle
+    </button>
+
+    <div id="winner" role="status" aria-live="polite"></div>
+  </main>
+</body>
+</html>
